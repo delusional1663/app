@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <form method="post" autocomplete="off">
+            <div class="wrap form">
+                <input name="url" type="text" placeholder="https://www.youtube.com/watch?v=uXwRgnZ990I">
+                <select name="format">
+                    <option value="m4a">M4A</option>
+                    <option value="mp3">MP3</option>
+                </select>
+                <button type="button">Download</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="window">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Download in Progress</div>
+            </div>
+            <div class="window-body">
+                <div class="progress-bar">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div class="field-row">
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
